@@ -62,7 +62,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'docker build -t $img .'
+                sh 'docker build -t $img:$v .'
             }
         }
         stage('tag') {
